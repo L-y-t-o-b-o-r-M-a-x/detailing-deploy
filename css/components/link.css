@@ -1,0 +1,30 @@
+.link {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.link__text {
+  position: relative;
+}
+.link::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  bottom: -3px;
+  left: -6px;
+  background-color: var(--bright-yellow);
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: -webkit-transform var(--short);
+  transition: -webkit-transform var(--short);
+  transition: transform var(--short);
+  transition: transform var(--short), -webkit-transform var(--short);
+}
+/*# sourceMappingURL=link.css.map */
