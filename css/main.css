@@ -10,6 +10,7 @@
   --dark-green: #3f727e;
   --transparent-black: rgb(34, 41, 45);
   --black: #000;
+  --bg-body: #2a2a29;
 }
 
 /* stylelint-disable */
@@ -98,10 +99,7 @@ html {
   min-height: 100%;
   font-size: 16px;
   color: var(--light-color);
-  background-color: #2a2a29;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 1000px 500px;
+  background-color: var(--bg-body);
 }
 @media (max-width: 1024px) {
   .page__body {
@@ -224,6 +222,12 @@ a {
   .title {
     font-size: 26px;
   }
+}
+
+.caption {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 
 .logo {
@@ -462,7 +466,7 @@ a {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 @media (max-width: 576px) {
   .list-services {
@@ -529,6 +533,23 @@ a {
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+.social__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+}
+.social__link svg {
+  fill: var(--light-color);
 }
 
 .header {
@@ -774,5 +795,59 @@ a {
   width: 157px;
   height: 44px;
   color: var(--black);
+}
+
+.contacts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.contacts__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.contacts__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts__icon {
+  border-radius: 50%;
+}
+.contacts__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--light-color);
+}
+.contacts__phone-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
