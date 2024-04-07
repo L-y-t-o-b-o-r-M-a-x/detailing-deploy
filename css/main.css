@@ -229,6 +229,11 @@ a {
   margin-bottom: 30px;
   font-size: 30px;
 }
+@media (max-width: 576px) {
+  .caption {
+    margin-bottom: 15px;
+  }
+}
 
 .logo {
   display: -webkit-box;
@@ -539,7 +544,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 .social__link {
   display: -webkit-inline-box;
@@ -550,6 +555,28 @@ a {
 }
 .social__link svg {
   fill: var(--light-color);
+}
+
+.balloon__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.balloon__address {
+  margin-bottom: 5px;
+}
+.balloon__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header {
@@ -799,7 +826,7 @@ a {
 
 .contacts {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
 }
 .contacts__container {
   display: -webkit-box;
@@ -824,7 +851,21 @@ a {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 30px;
+}
+@media (max-width: 1024px) {
+  .contacts__address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 .contacts__wrapper {
   display: -webkit-box;
@@ -832,6 +873,7 @@ a {
   display: flex;
 }
 .contacts__icon {
+  margin-right: 10px;
   border-radius: 50%;
 }
 .contacts__icon svg {
@@ -850,6 +892,16 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+.contacts__caption {
+  margin-bottom: 10px;
+}
+.contacts__link {
+  color: var(--light-color);
+  font-style: normal;
+}
+.contacts__link:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .maps {
