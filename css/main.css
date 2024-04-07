@@ -300,6 +300,11 @@ a {
   }
 }
 
+.nav__link--time {
+  font-size: 44px;
+  color: var(--bright-yellow);
+}
+
 .water-btn {
   display: -webkit-box;
   display: -ms-flexbox;
